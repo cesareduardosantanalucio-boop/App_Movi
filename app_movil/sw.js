@@ -1,8 +1,8 @@
 const CACHE_NAME = 'portal-evidencias-utc-v1';
 const ASSETS = [
   './',
-  './index.html',
-  './styles.css',
+  './Index.html',
+  './Styles.css',
   './app.js',
   './manifest.json'
 ];
