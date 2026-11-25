@@ -6,23 +6,13 @@
   <meta name="theme-color" content="#0066cc">
   <title>Portal de Evidencias - UTC</title>
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="Styles.css">
+  <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 </head>
 <body>
 
   <div class="device-frame">
-    
-    <div class="status-bar">
-      <div class="time">9:41</div>
-      <div class="camera-lens"></div>
-      <div class="status-icons">
-        <span class="material-icons-outlined">wifi</span>
-        <span class="material-icons-outlined">signal_cellular_4_bar</span>
-        <span class="material-icons-outlined">battery_full</span>
-      </div>
-    </div>
 
     <div id="screen-login" class="screen active">
       <div class="content-login">
@@ -143,7 +133,7 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js').catch(() => {});
+        navigator.serviceWorker.register('./sw.js').catch(() => {});
       });
     }
   </script>
